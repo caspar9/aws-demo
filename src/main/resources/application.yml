@@ -1,0 +1,22 @@
+
+spring:
+  application:
+    name: aws-demo
+  profiles:
+    active: dev
+
+server:
+  port: 8080
+  servlet:
+    context-path: /aws-demo
+    session:
+      cookie:
+        http-only: true
+
+logging:
+  level:
+   ROOT: warn
+   org:
+    apache: info
+    springframework: info
+    ies: debug
